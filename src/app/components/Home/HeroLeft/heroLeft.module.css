@@ -11,15 +11,15 @@
 .wrapper:hover .square
 {   
 
-    transform: translateZ(50px);
-    transition: transform 200ms ease-out;
+    transform: translateZ(30px);
+    
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
 
-    --contentOpacity: 1;
+    --contentOpacity: 0.8;
 }
 
 .wrapper:hover .secondSquare {
-    transform: translateZ(80px);
+    transform: translateZ(60px);
 }
 
 .card {
@@ -29,16 +29,16 @@
     border-radius: 2em;
     position: relative;
 
-    --rotationX: 30deg;
-    --rotationY: 30deg;
-
-    --initX: 30deg;
+    
+    --initX: 20deg;
     --initY: 30deg;
     --angle: 7.5deg;
-
+    --rotationX: var(--initX);
+    --rotationY: var(--initY);
+    
     transform-style: preserve-3d;
     transform: perspective(5000px) rotateX(var(--rotationX)) rotateY(var(--rotationY));
-    transition: transform 300ms ease-out;
+    transition: transform 350ms ease-out;
 
 
     background-image: url('/home/heroLeftBg.svg');
@@ -97,8 +97,9 @@
     transform: translateZ(10px);
     padding: 0.5em;
     transform-style: preserve-3d;
+    transition: transform 300ms ease-out;
 
-    --contentOpacity: 0.5
+    --contentOpacity: 0.5;
 }
 
 .square > div {

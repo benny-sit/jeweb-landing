@@ -43,9 +43,16 @@ module.exports = {
           '800': '#344158',
           '900': '#2f394b',
         },
-      
-      
-      }
+      },
+      animation: {
+        'move-bg-slow': 'move-bg 10s linear alternate infinite',
+      },
+      keyframes: {
+        'move-bg': {
+          '0%':   { 'background-position': '0% 0' },
+          '100%': { 'background-position': '100% 0'}
+        }
+      },
     },
   },
   daisyui: {
