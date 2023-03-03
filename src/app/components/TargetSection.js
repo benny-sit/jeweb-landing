@@ -17,7 +17,7 @@ export default function TargetSection() {
             <img src='/home/target/accentWebBg.svg' className='w-1/5 aspect-auto absolute -top-[10%] group-hover:translate-x-5 group-hover:translate-y-5 transition-transform' />
             <img src='/home/target/primaryWebBg.svg' className='w-1/3 aspect-auto absolute -bottom-[10%] left-1/3 -translate-x-1/2 group-hover:-translate-y-5 transition-transform' />
             <img src='/home/target/secondaryWebBg.svg' className='w-1/4 aspect-auto absolute -top-[5%] -right-[2%] group-hover:-translate-x-5 group-hover:translate-y-5 transition-transform' />
-            <img src='/home/target/targetBg.svg' className='w-full aspect-video max-w-2xl rounded-3xl shadow-xl hover:shadow-2xl transition-shadow mx-auto relative'/>
+            <img src='/home/target/targetBg.svg' className='w-full aspect-video max-w-2xl rounded-3xl shadow-xl transition-shadow mx-auto relative'/>
           </div>
         </div>
     </section>
