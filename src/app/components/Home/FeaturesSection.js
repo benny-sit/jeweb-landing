@@ -30,7 +30,7 @@ export default function FeaturesSection() {
         <Image className='relative' src='/home/features/google_g.svg' width={80} height={80}/>
         </div>
         <h6 className='font-semibold tracking-tight text-xl'>קידום אתרים בגוגל</h6>
-        <p>כלי אופטימיזציה המאפשרים התאמה מלאה למנועי החיפוש השונים</p>
+        <p>מספקים לכם אופטימיזציה הנותנת התאמה מלאה למנועי החיפוש השונים</p>
       </div>
     </div>
 
