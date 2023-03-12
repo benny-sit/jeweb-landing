@@ -5,20 +5,27 @@ import styles from './specialRight.module.css'
 
 export default function SpecialRight() {
     const sectionRef = useRef(null);
+    const observerRef = useRef(null);
     const [isSeen, setIsSeen] = useState(false);
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                setIsSeen(true);
-                observer.disconnect();
-            }
-        })
-    }, {
-        threshold: 1,
-    })
 
     useEffect(() => {
-        if (sectionRef.current) observer.observe(sectionRef.current)
+        observerRef.current = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    setIsSeen(true);
+                    observerRef.current.disconnect();
+                }
+            })
+        },{
+            threshold: 1,
+        })
+
+        if (sectionRef.current) observerRef.current.observe(sectionRef.current)
+
+        return () => {
+            if (sectionRef.current) observerRef.current.unobserve(sectionRef.current);
+            observerRef.current.disconnect();
+        }
     }, [sectionRef])
 
   return (
