@@ -13,6 +13,7 @@ export default function HeroLeft() {
       <div className={styles.mousePositionTracker} />
       <div className={styles.mousePositionTracker} />
       <div className={styles.mousePositionTracker} />
+      
       <div className={styles.card}>
         <div className={styles.topButtons}>
           <div></div><div></div><div></div>

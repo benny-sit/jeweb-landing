@@ -1,5 +1,8 @@
-import HeroSection from "./components/Home/HeroSection";
-import TargetSection from "./components/TargetSection";
+import FeaturesSection from "./components/Home/FeaturesSection";
+import HeroSection from "./components/Home/Hero/HeroSection";
+import PricingSection from "./components/Home/PricingSection";
+import SpecialSection from "./components/Home/Special/SpecialSection";
+import TargetSection from "./components/Home/TargetSection";
 
 
 export default function Home() {
@@ -7,6 +10,9 @@ export default function Home() {
     <main className="min-h-screen">
       <HeroSection />
       <TargetSection />
+      <SpecialSection />
+      <FeaturesSection />
+      <PricingSection />
     </main>
   )
 }

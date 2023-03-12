@@ -41,7 +41,7 @@ module.exports = {
           '600': '#495e80',
           '700': '#3c4c68',
           '800': '#344158',
-          '900': '#2f394b',
+          '900': '#iiiii',
         },
       },
       animation: {
@@ -52,6 +52,9 @@ module.exports = {
           '0%':   { 'background-position': '0% 0' },
           '100%': { 'background-position': '100% 0'}
         }
+      },
+      gridTemplateColumns: {
+        'feature': 'repeat(auto-fit,minmax(300px, 1fr))',
       },
     },
   },

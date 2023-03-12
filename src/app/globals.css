@@ -10,4 +10,8 @@
   .gradient-hero-bg {
     background: radial-gradient(#fff, #f5f7fa);
   }
+
+  .feature-cell {
+    @apply aspect-square w-full text-center flex flex-col justify-center items-center basis-[300px] gap-4;
+  }
 }
