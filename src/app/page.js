@@ -1,8 +1,8 @@
-import FeaturesSection from "./components/Home/FeaturesSection";
-import HeroSection from "./components/Home/Hero/HeroSection";
-import PricingSection from "./components/Home/PricingSection";
-import SpecialSection from "./components/Home/Special/SpecialSection";
-import TargetSection from "./components/Home/TargetSection";
+import FeaturesSection from "./components/FeaturesSection";
+import HeroSection from "./components/Hero/HeroSection";
+import PricingSection from "./components/PricingSection";
+import SpecialSection from "./components/Special/SpecialSection";
+import TargetSection from "./components/TargetSection";
 
 
 export default function Home() {

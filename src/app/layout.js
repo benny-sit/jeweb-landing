@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="he" data-theme="corporate" className={rubik.variable}>
       <body className='font-rubik bg-secondary-var-50/50 min-h-[200vh] '>
         <Navbar />
+        
         {children}
         
       </body>

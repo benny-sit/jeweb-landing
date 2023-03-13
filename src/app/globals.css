@@ -7,6 +7,10 @@
 }
 
 @layer utilities {
+  .feature-cell {
+    @apply aspect-square w-full text-center flex flex-col justify-center items-center basis-[300px] gap-4;
+  }
+
   .gradient-hero-bg {
     background: radial-gradient(#fff, #f5f7fa);
   }
@@ -14,7 +18,15 @@
     background: radial-gradient(#effaf5, transparent);
   }
 
-  .feature-cell {
-    @apply aspect-square w-full text-center flex flex-col justify-center items-center basis-[300px] gap-4;
+
+  .border-gradient-mixed{
+    /* padding: 4px; control the border thickness */
+    background: linear-gradient(135deg ,#4b6bfb, #67cba0, #7b92b2);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+          mask-composite: exclude;
+    pointer-events: none;
   }
 }
