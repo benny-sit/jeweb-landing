@@ -5,8 +5,8 @@ import React from 'react'
 
 export default function FeaturesSection() {
   return (
-    <section className='bg-secondary-var-50 text-center mt-10 pb-5 md:pb-10 px-5'>
-      <h2 className='text-5xl font-semibold tracking-tight py-8'>אנחנו מספקים <span className='text-transparent  bg-clip-text bg-gradient-to-t from-primary to-accent'>לכם</span></h2>
+    <section aria-labelledby='feature-header' className='bg-secondary-var-50 text-center mt-10 pb-5 md:pb-10 px-5'>
+      <h2 id="feature-header" className='text-5xl font-semibold tracking-tight py-8'>אנחנו מספקים <span className='text-transparent  bg-clip-text bg-gradient-to-t from-primary to-accent'>לכם</span></h2>
     <div className='flex max-w-7xl w-full justify-center items-center flex-wrap gap-6  mx-auto font-rubik'>
       <div className='feature-cell'>
         <div className='relative'>
