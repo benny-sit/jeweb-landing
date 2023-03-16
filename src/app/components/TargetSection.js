@@ -8,7 +8,7 @@ export default function TargetSection() {
                 ה<span className='text-transparent  bg-clip-text bg-gradient-to-r from-primary to-accent'>מטרה</span> שלנו
             </h3>
             <h4 className='tracking-wide text-lg mt-5 leading-relaxed'>
-                אנחנו באים במטרה לעזור לקהילות השונות בארץ וגם לאנשים פרטיים - לקבל יותר חשיפה ופירסום דרך ערוצי התקשורת השונים באמצעות יצירה ותחזוק של דפי אינטרנט אשר ממומשים בטכנולוגיות החדשות ביותר בשוק.
+                אנחנו באים במטרה לעזור לקהילות השונות בארץ וגם למגזר הפרטי - לקבל יותר חשיפה ופירסום דרך ערוצי התקשורת השונים באמצעות יצירה ותחזוק של דפי אינטרנט אשר ממומשים בטכנולוגיות החדשות ביותר בשוק.
             </h4>
         </div>
         <div className='basis-[350px] grow mt-10 max-w-[700px]'>

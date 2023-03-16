@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <header className='fixed top-0 w-full z-40 isolate'>
-    <nav className={`max-w-7xl flex gap-3 items-center mx-auto w-full p-3 rounded-b-xl  ${scrollPosition > 0 && 'backdrop-blur-md bg-secondary-var-100/20'} relative transition-all `} >
+    <nav className={`max-w-7xl flex gap-3 items-center mx-auto w-full p-3 rounded-b-xl  ${scrollPosition > 0 && 'backdrop-blur-md bg-white/20'} relative transition-colors `} >
         <button className='btn btn-ghost block sm:hidden' onClick={() => setIsMenuOpen(!isMenuOpen)}>
           { isMenuOpen? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30}/>}
         </button>
