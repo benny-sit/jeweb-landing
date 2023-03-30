@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 // import nodemailer from "nodemailer";
-const mail = require("nodemailer").mail;
+// const mail = require("nodemailer").mail;
+const sendMail = require("sendmail")();
 
 const emailFrom = process.env.EMAIL
 const emailTo = process.env.TO_EMAIL
@@ -52,11 +53,20 @@ export async function POST(request) {
         //     ...generateEmailContent(res),
         //     subject: "New Request To Contact",
         // });
-        mail({
+        // mail({
+        //     ...mailOptions,
+        //     subject: "New Request To Contact",
+        //     text: "Hello from Node mailer",
+        //     html: "<b>Hello World!</b>"
+        // })
+
+        sendMail({
             ...mailOptions,
             subject: "New Request To Contact",
-            text: "Hello from Node mailer",
             html: "<b>Hello World!</b>"
+        }, function(err, res) {
+            console.log(err, err.stack);
+            console.log(res);
         })
     } catch (error) {
         console.log(error.message);
